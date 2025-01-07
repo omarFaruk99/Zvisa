@@ -36,8 +36,8 @@ const Login = () => {
     });
   };
   return (
-    <div className="flex justify-center mt-28">
-      <div className=" card bg-gray-500 w-full max-w-sm shrink-0 shadow-2xl">
+    <div className="flex justify-center my-12">
+      <div className=" card bg-base w-full max-w-sm shrink-0 shadow-2xl border">
         <form onSubmit={handleSubmit} className="card-body pb-2">
           <h2 className="text-center font-semibold text-lg">
             Login Your Account
@@ -75,16 +75,16 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn btn-primary bg-[#4F709C] hover:bg-[#213555] border-none text-gray-100">Login</button>
           </div>
         </form>
 
         {/* Login in with google */}
         <div className="flex justify-center">
-          <button className="btn btn-accent" onClick={googleLogingHandler}>
+          <button className="btn btn-accent bg-[#4F709C] hover:bg-[#213555] border-none text-gray-100" onClick={googleLogingHandler}>
             {" "}
             <span>
-              <FaGoogle />
+              <FaGoogle color="yellow" />
             </span>{" "}
             Sign in With Google
           </button>
@@ -92,7 +92,7 @@ const Login = () => {
 
         <div className="flex justify-center pb-5">
           Do not have an account?
-          <Link className="text-red-500 ml-1" to="/register">
+          <Link className="text-[#4F709C] ml-1" to="/register">
             Register
           </Link>
         </div>

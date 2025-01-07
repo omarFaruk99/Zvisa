@@ -54,9 +54,9 @@ const Register = () => {
   };
 
   return (
-    <div className=" flex justify-center mt-28">
-      <div className="card bg-[#f0f8ff] w-full max-w-sm shrink-0 shadow-2xl">
-        <form onSubmit={handleSubmit} className="card-body">
+    <div className=" flex justify-center my-12">
+      <div className="card bg-base border w-full max-w-md shrink-0 shadow-2xl">
+        <form onSubmit={handleSubmit} className="card-body pb-2">
           <h2 className="text-center font-semibold text-lg">
             Register Your Account
           </h2>
@@ -109,16 +109,16 @@ const Register = () => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Register</button>
+            <button className="btn btn-primary bg-[#4F709C] hover:bg-[#213555] border-none text-gray-100">Register</button>
           </div>
         </form>
 
         {/* Login in with google */}
         <div className="flex justify-center">
-          <button className="btn btn-accent" onClick={googleLogingHandler}>
+          <button className="btn btn-accent bg-[#4F709C] hover:bg-[#213555] border-none text-gray-100" onClick={googleLogingHandler}>
             {" "}
             <span>
-              <FaGoogle />
+              <FaGoogle color="yellow" />
             </span>{" "}
             Sign in With Google
           </button>
@@ -126,7 +126,7 @@ const Register = () => {
 
         <div className="flex justify-center pb-5">
           Already have an account?
-          <Link className="text-orange-600 ml-1" to="/login">
+          <Link className="text-[#4F709C] ml-1" to="/login">
             Login
           </Link>
         </div>

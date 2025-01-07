@@ -26,14 +26,24 @@ const Navbar = () => {
     <>
       <NavLink to={"/"}>Home</NavLink>
       <NavLink to={"/allVisa"}>All Visas</NavLink>
-      <NavLink to={"/addVisa"}>Add Visa</NavLink>
-      <NavLink to={"/myAddedVisas"}>My added visas</NavLink>
-      <NavLink to={"/myVisaApplication"}>My Visa applications</NavLink>
+
+      {/* Links visible only when the user in logged in */}
+      {user && (
+        <>
+          <NavLink to={"/addVisa"}>Add Visa</NavLink>
+          <NavLink to={"/myAddedVisas"}>My added visas</NavLink>
+          <NavLink to={"/myVisaApplication"}>My Visa applications</NavLink>
+        </>
+      )}
+
+      <NavLink to={"/contact"}>Contact Us</NavLink>
+      <NavLink to={"/faq"}>FAQ</NavLink>
+      <NavLink to={"/testimonials"}>Testimonials</NavLink>
     </>
   );
 
   return (
-    <div className="navbar bg-[#4F709C] text-white">
+    <div className="navbar fixed z-10 bg-[#4F709C] text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -56,14 +66,16 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <div className="flex flex-col text-[#FFD3B6] gap-2 ">{navbarLink}</div>
+            <div className="flex flex-col text-[#FFD3B6] gap-2 ">
+              {navbarLink}
+            </div>
           </ul>
         </div>
         <a className="btn btn-ghost text-[#FFD3B6] text-xl font-bold">Zvisa</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <div className="flex gap-2 font-normal">{navbarLink}</div>
+          <div className="flex gap-x-5 font-normal">{navbarLink}</div>
         </ul>
       </div>
       <div className="navbar-end flex items-center">
@@ -97,13 +109,13 @@ const Navbar = () => {
           <div className="flex gap-2">
             <NavLink
               to={"/login"}
-              className="btn btn-primary text-sm py-1 px-2 sm:text-base sm:py-2 sm:px-5"
+              className="btn bg-[#213555] hover:bg-[#162742] text-gray-200 border-none text-sm py-1 px-2 sm:text-base sm:py-2 sm:px-3"
             >
               Login
             </NavLink>
             <NavLink
               to={"/register"}
-              className="btn bg-blue-800 text-white border-none text-sm py-1 px-2 sm:text-base sm:py-2 sm:px-5"
+              className="btn bg-[#213555] hover:bg-[#162742] text-gray-200 border-none text-sm py-1 px-2 sm:text-base sm:py-2 sm:px-3"
             >
               Register
             </NavLink>
@@ -125,7 +137,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={userSignOut}
-              className="bg-blue-600 py-1 sm:py-2 px-2 sm:px-5 rounded-sm text-sm sm:text-base"
+              className="bg-[#213555] hover:bg-[#162742] text-gray-200 py-1 sm:py-2 px-2 sm:px-3 rounded-md text-sm sm:text-base"
             >
               Sign out
             </button>

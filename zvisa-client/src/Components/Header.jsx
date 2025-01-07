@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         {user?.email ? (
           <p>
             Welcome!{" "}
@@ -23,7 +23,7 @@ const Header = () => {
         ) : (
           ""
         )}
-      </div>
+      </div> */}
       <Navbar></Navbar>
     </div>
   );

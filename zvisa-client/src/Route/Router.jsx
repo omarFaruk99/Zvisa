@@ -11,6 +11,9 @@ import Login from "../Components/Login";
 import ForgotPassword from "../Components/ForgotPassword";
 import PrivateRouter from "./PrivateRouter";
 import ErrorPage from "../Components/ErrorPage";
+import ContactUs from "../Components/ContactUs";
+import Testimonials from "../Components/Testimonials";
+import FAQ from "../Components/FAQ";
 
 const router = createBrowserRouter([
   {
@@ -74,10 +77,18 @@ const router = createBrowserRouter([
         path: "/forgotPassword",
         element: <ForgotPassword></ForgotPassword>,
       },
-      // {
-      //   path: "*",
-      //   element: <ErrorPage></ErrorPage>,
-      // },
+      {
+        path: "/faq",
+        element: <FAQ></FAQ>,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs></ContactUs>,
+      },
+      {
+        path: "/testimonials",
+        element: <Testimonials></Testimonials>,
+      },
     ],
   },
   {
