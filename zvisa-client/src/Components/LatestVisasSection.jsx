@@ -29,13 +29,13 @@ const LatestVisasSection = () => {
   }
 
   return (
-    <div className="bg-slate-50 mt-5 mb-5 py-5 rounded-md">
+    <div className="bg-base-100 mt-5 mb-5 py-5 rounded-md">
       <h1 className="text-3xl font-bold text-center mb-10">Latest Visas</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
         {visas.map((visa) => (
           <div
             key={visa._id}
-            className="card w-full bg-white shadow-lg rounded-lg overflow-hidden"
+            className="card w-full bg-base-100 border shadow-lg rounded-lg overflow-hidden"
           >
             {/* Display country image */}
             <img
@@ -47,48 +47,46 @@ const LatestVisasSection = () => {
             {/* Card body */}
             <div className="p-6">
               {/* Display country name */}
-              <h3 className="text-xl font-semibold text-gray-800">
-                {visa.countryName}
-              </h3>
+              <h3 className="text-xl font-semibold">{visa.countryName}</h3>
 
               {/* Display visa type */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm mt-2">
                 <strong>Visa Type:</strong> {visa.visaType}
               </p>
 
               {/* Display processing time */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm  mt-2">
                 <strong>Processing Time:</strong> {visa.processingTime} days
               </p>
 
               {/* Display required documents */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm  mt-2">
                 <strong>Required Documents:</strong>{" "}
                 {visa.requiredDocuments?.join(", ")}
               </p>
 
               {/* Display description */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm mt-2">
                 <strong>Description:</strong> {visa.description}
               </p>
 
               {/* Display age restriction */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm mt-2">
                 <strong>Age Restriction:</strong> {visa.ageRestriction}
               </p>
 
               {/* Display fee */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm mt-2">
                 <strong>Fee:</strong> {visa.fee} USD
               </p>
 
               {/* Display validity */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm mt-2">
                 <strong>Validity:</strong> {visa.validity}
               </p>
 
               {/* Display application method */}
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm mt-2">
                 <strong>Application Method:</strong> {visa.applicationMethod}
               </p>
 

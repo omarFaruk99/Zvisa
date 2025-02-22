@@ -1,65 +1,126 @@
-### Assignment Category: Sunflower
+# Visa Navigator - Modern Visa Application System
 
-### Project Name: Visa Navigator
+## Project Overview
+Visa Navigator is a comprehensive web application that revolutionizes the visa application process. It provides a seamless platform for users to check visa requirements, submit applications, and track their status in real-time. Built with modern web technologies, it offers a secure, user-friendly interface accessible across all devices.
 
-Visa Navigator is a user-friendly web application designed to streamline the process of checking visa requirements, applying for visas, and tracking visa applications. The platform delivers a seamless experience with an intuitive interface and robust functionality, aimed at simplifying the visa application process.
 
----
-
-#### Key Features:
-
-1. **Dynamic Interface**:
-
-   - Responsive design for mobile, tablet, and desktop.
-   - Interactive navbar with conditional login/logout display based on user authentication.
-
-2. **User Authentication**:
-
-   - Firebase-based authentication with Google login integration.
-   - Private/protected routes for secured sections like adding or managing visas.
-
-3. **Visa Management**:
-
-   - Add new visa details (country, type, processing time, fees, etc.).
-   - View all visas with filtering and sorting functionality.
-   - Access detailed information about each visa with the ability to apply online.
-
-4. **Application Tracking**:
-
-   - Users can track their applications via a dedicated page.
-   - Includes options to cancel applications if required.
-
-5. **Enhanced UX Features**:
-
-   - Modern animations using **Lottie React**.
-   - Typing effects and tooltips powered by **React-simple-typewriter** and **React Tooltip**.
-   - Toast notifications for CRUD operations.
-
-6. **Database**:
-
-   - **MongoDB** is used to store and manage all visa-related data securely.
-
-7. **Extra Functionalities**:
-   - Dark/light theme toggle.
-   - Search functionality for applications.
-   - Advanced dropdown filters for visa types.
-
----
-
-#### Technologies Used:
-
-- **Frontend**: React, React Router, Tailwind CSS
-- **Animations and UI Enhancements**: Lottie React, React-simple-typewriter, React Icons
-- **Authentication**: Firebase Authentication
-- **Database**: MongoDB
-- **Hosting**:
-  - Client-side: Firebase Hosting
-  - Server-side: Vercel
-
----
-
-#### Demo Links:
-
-- [Client Side GitHub Repository](https://github.com/programming-hero-web-course2/b10-a10-client-side-omarFaruk99.git)
-- [Server Side GitHub Repository](https://github.com/programming-hero-web-course2/b10-a10-server-side-omarFaruk99.git)
+## 🔗 Live Links
 - [Live Website](https://zvisa-fb196.web.app/)
+- [Client Repository](https://github.com/programming-hero-web-course2/b10-a10-client-side-omarFaruk99.git)
+- [Server Repository](https://github.com/programming-hero-web-course2/b10-a10-server-side-omarFaruk99.git)
+
+## 🌟 Key Features
+
+1. **Dynamic Interface**
+   - Responsive design (mobile, tablet, desktop)
+   - Interactive navbar with authentication states
+   - Dark/light theme toggle
+
+2. **User Authentication**
+   - Firebase authentication system
+   - Google login integration
+   - Protected routes for secure access
+
+3. **Visa Management**
+   - Comprehensive visa details management
+   - Advanced filtering and sorting
+   - Real-time application tracking
+   - Application cancellation options
+
+4. **Enhanced UX Features**
+   - Lottie animations
+   - Dynamic typing effects
+   - Interactive tooltips
+   - Toast notifications
+   - Advanced search functionality
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React.js with Vite
+- React Router DOM
+- Tailwind CSS with DaisyUI
+- Firebase (Auth & Hosting)
+- Lottie React
+- React Simple Typewriter
+- React Icons
+- React Tooltip
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Cors middleware
+
+### Deployment
+- Frontend: Firebase Hosting
+- Backend: Vercel
+
+## 📦 Dependencies
+
+```json
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase": "^11.0.0",
+    "mongodb": "^6.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "react-tooltip": "^5.8.3",
+    "sweetalert2": "^11.7.3"
+  }
+}
+```
+
+## 🚀 Local Development Setup
+
+1. **Clone Repositories**
+   ```bash
+   git clone https://github.com/programming-hero-web-course2/b10-a10-client-side-omarFaruk99.git
+   git clone https://github.com/programming-hero-web-course2/b10-a10-server-side-omarFaruk99.git
+   ```
+
+2. **Frontend Setup**
+   ```bash
+   cd b10-a10-client-side-omarFaruk99
+   npm install
+   ```
+
+3. **Environment Variables**
+   Create `.env.local` in client directory:
+   ```env
+   VITE_apiKey=your_firebase_api_key
+   VITE_authDomain=your_auth_domain
+   VITE_projectId=your_project_id
+   VITE_storageBucket=your_storage_bucket
+   VITE_messagingSenderId=your_sender_id
+   VITE_appId=your_app_id
+   ```
+
+4. **Backend Setup**
+   ```bash
+   cd ../b10-a10-server-side-omarFaruk99
+   npm install
+   ```
+
+5. **Start Development Servers**
+   ```bash
+   # Frontend (in client directory)
+   npm run dev
+
+   # Backend (in server directory)
+   npm run dev
+   ```
+
+## 🔐 Security Features
+- Secured API endpoints
+- Protected routes
+- Environment variable protection
+- MongoDB authentication
+- Firebase secure authentication
+
+## 📝 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
