@@ -6,8 +6,8 @@ Visa Navigator is a comprehensive web application that revolutionizes the visa a
 
 ## 🔗 Live Links
 - [Live Website](https://zvisa-fb196.web.app/)
-- [Client Repository](https://github.com/programming-hero-web-course2/b10-a10-client-side-omarFaruk99.git)
-- [Server Repository](https://github.com/programming-hero-web-course2/b10-a10-server-side-omarFaruk99.git)
+- [Client Repository](https://github.com/omarFaruk99/Zvisa/tree/main/zvisa-client)
+- [Server Repository](https://github.com/omarFaruk99/Zvisa/tree/main/zvisa-server)
 
 ## 🌟 Key Features
 
@@ -79,8 +79,8 @@ Visa Navigator is a comprehensive web application that revolutionizes the visa a
 
 1. **Clone Repositories**
    ```bash
-   git clone https://github.com/programming-hero-web-course2/b10-a10-client-side-omarFaruk99.git
-   git clone https://github.com/programming-hero-web-course2/b10-a10-server-side-omarFaruk99.git
+   git clone https://github.com/omarFaruk99/Zvisa/tree/main/zvisa-client
+   git clone https://github.com/omarFaruk99/Zvisa/tree/main/zvisa-server
    ```
 
 2. **Frontend Setup**
